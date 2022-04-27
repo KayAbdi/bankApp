@@ -3,12 +3,13 @@ function Balance(){
   const ctx = React.useContext(UserContext);
   return (
     <Card
-    bgcolor="primary"
+    txt="dark"
+    bgcolor="info"
     header="Balance"
     status={status}
     body={
       <>
-     <div>Your Balance Is: ${ctx.balance}</div>
+     <div>Your Balance Is: ${ctx.users[account].balance}</div>
      </>
     }
     />

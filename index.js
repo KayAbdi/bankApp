@@ -1,3 +1,4 @@
+
 function Spa() {
   return (
     <HashRouter>
@@ -12,8 +13,11 @@ function Spa() {
           <Route path="/balance/" component={Balance} />
           <Route path="/alldata/" component={AllData} />
         </div>
-      </UserContext.Provider>      
+      </UserContext.Provider>
+      <Footer/>
     </HashRouter>
+   
+    
   );
 }
 

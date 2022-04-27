@@ -27,7 +27,8 @@ function Login(){
   // }
   return (
     <Card
-      bgcolor="primary"
+      txt="dark"
+      bgcolor="info"
       header="SIGN IN"
       status={status}
       body={

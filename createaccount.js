@@ -33,7 +33,8 @@ function CreateAccount(){
 
   return (
     <Card
-      bgcolor="primary"
+      txt="dark"
+      bgcolor="info"
       header="Create Account"
       status={status}
       body={show ? (  
