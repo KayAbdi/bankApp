@@ -4,21 +4,22 @@ function Deposit(){
   const ctx = React.useContext(UserContext);
 
   const handleDeposit = () => {
-    ctx.users[account].balance += parseInt(deposit);
-		ctx.push({
-			account: ctx.users[account],
-			amount: deposit,
-			isDeposit: true,
-		});
-		if (isNaN(deposit)) {
+    if (isNaN(deposit)) {
 			alert('Enter a valid number');
 			return false;
 		}
-		if (deposit < 0) {
+    if (parseInt(deposit) < 0) {
 			alert('Enter a positive number');
 			return false;
 		}
-		
+    else {
+      ctx.users[account].balance += parseInt(deposit);
+      ctx.push({
+        account: ctx.users[account],
+        amount: deposit,
+        isDeposit: true,
+      });
+    }
 		return setDeposit(0);
 	};
 

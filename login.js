@@ -3,28 +3,6 @@ function Login(){
   const [password, setPassword] = React.useState('');
   const ctx = React.useContext(UserContext)
 
-  // function validateInfo(){
-  //   let showBalance = <a className="nav-link" href="#/balance/">Balance</a>;
-  //   let data = JSON.stringify(ctx);
-  //   console.log(data)
-  //   let email = {email};
-  //   let password = {password};
-  //   for (let i = 0; i < data.length; i++){
-  //     if (data.email === email && data.password === password){
-  //       showBalance;
-  //     }else{
-  //       alert("enter valid info");
-  //     }
-  //   }
-    
-
-  // }
-
-  // function signIn(){
-  //   console.log(email,password);
-  //   validateInfo();
-
-  // }
   return (
     <Card
       txt="dark"

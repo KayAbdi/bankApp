@@ -11,6 +11,18 @@ function CreateAccount(){
         setStatus('Error: ' + label);
         setTimeout(() => setStatus(''),3000);
         return false;
+      } 
+      if (password.length < 8) {
+        setStatus('password must be at least 8 characters');
+        setTimeout(() => setStatus(''),3000);
+        return false;
+      }
+      // if(booking_email == '' || booking_email.indexOf('@') == -1 || booking_email.indexOf('.') == -1) {
+
+      if (email == '' || email.indexOf('@') == -1 || email.indexOf('.') == -1){
+        setStatus('email must include @ and .');
+        setTimeout(() => setStatus(''),3000);
+        return false;
       }
       return true;
   }
